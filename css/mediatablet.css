@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    padding: 112px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-title {
+    min-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.1;
+  }
+}
