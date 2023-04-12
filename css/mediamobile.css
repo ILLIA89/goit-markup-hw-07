@@ -1,20 +1,40 @@
-@media screen and (max-width: 479px), (min-width: 480px) {
+@media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  .hero {
+    max-width: 428px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* ----------------------Мобільне вікно------------------------*/
+  /* .mobil-menu-container {
   }
 
-  .hero {
-    padding: 112px 0;
-    margin: 0 auto;
-    text-align: center;
+  .mobil-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 796px;
+    width: 428px;
+    background: #ffffff;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    transition: opacity 250ms linear, visibility 250ms linear;
+  } */
+}
+
+@media screen and (min-width: 428px), (max-width: 428px) {
+  .example {
+    display: none;
   }
-  .hero-title {
-    min-width: 320px;
-    margin: 0 auto;
-    margin-bottom: 72px;
-    font-size: 36px;
-    line-height: 1.111;
+
+  .nav-menu {
+    display: none;
+  }
+
+  .address-list {
+    display: none;
   }
 }

@@ -1,21 +1,139 @@
 @media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
   .container {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1158px;
   }
 
   .hero {
+    max-width: 1440px;
     padding: 188px 0;
-    margin: 0 auto;
-    text-align: center;
   }
 
   .hero-title {
-    min-width: 496px;
-    margin: 0 auto;
-    margin-bottom: 48px;
+    max-width: 496px;
     font-size: 56px;
-    line-height: 1.1;
+  }
+
+  .shadow-port-head {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e7e9fc;
+  }
+
+  /*-------------------Логотип--------------------- */
+
+  .link {
+    text-decoration: none;
+  }
+
+  .logo {
+    margin-right: 76px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: var(--button-text-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  .studio {
+    color: var(--titel-text-color);
+  }
+
+  /*---------------------- Навігація------------------ */
+
+  .nav-menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header-container {
+    display: flex;
+    margin-right: auto;
+  }
+
+  .nav-link.current {
+    color: var(--button-hover-background);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--button-hover-background);
+  }
+
+  .nav-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--titel-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link::after {
+    content: '';
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--button-hover-background);
+    border-radius: 2px;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after,
+  .nav-link.current::after {
+    opacity: 1;
+  }
+  /*------------------------Адрес ------------------*/
+
+  .address-list .address-item:hover,
+  .address-list .address-item:focus {
+    color: var(--button-hover-background);
+  }
+
+  .address-item {
+    color: var(--primary-text-color);
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media (min-with: 1158px) {
+  .nav-burger {
+    display: none;
   }
 }
