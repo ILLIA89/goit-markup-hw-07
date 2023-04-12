@@ -83,9 +83,7 @@ body {
 }
 
 .header {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .section {
@@ -103,7 +101,6 @@ body {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 22px;
-  /* margin-right: 249px; */
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   color: var(--button-text-color);
@@ -118,14 +115,14 @@ body {
 }
 
 /*---------------------- Навігація------------------ */
-
+.nav {
+  display: flex;
+}
 .nav-menu-button {
   margin-left: auto;
   background-color: transparent;
-}
-
-.icon-burger {
-  stroke: #2e2f42;
+  stroke: var(--titel-text-color);
+  border: none;
 }
 
 /* .nav-menu {
@@ -783,7 +780,7 @@ body {
 
 .modal {
   position: absolute;
-  min-width: 408px;
+  min-width: 392px;
   min-height: 576px;
   padding: 72px 24px 24px 24px;
   top: 50%;
