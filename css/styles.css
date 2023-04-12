@@ -117,38 +117,43 @@ body {
   color: var(--titel-text-color);
 }
 
-.nav-burger {
-  display: block;
-}
-
 /*---------------------- Навігація------------------ */
 
-.nav-menu {
-  display: flex;
-  gap: 40px;
+.nav-menu-button {
+  margin-left: auto;
+  background-color: transparent;
 }
 
-.nav {
+.icon-burger {
+  stroke: #2e2f42;
+}
+
+/* .nav-menu {
+  display: flex;
+  gap: 40px;
+} */
+
+/* .nav {
   display: flex;
   align-items: center;
   margin-right: auto;
-}
+} */
 
-.header-container {
+/* .header-container {
   display: flex;
   margin-right: auto;
-}
+} */
 
-.nav-link.current {
+/* .nav-link.current {
   color: var(--button-hover-background);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--button-hover-background);
-}
+} */
 
-.nav-link {
+/* .nav-link {
   display: block;
   position: relative;
   text-decoration: none;
@@ -159,9 +164,9 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.nav-link::after {
+/* .nav-link::after {
   content: '';
   opacity: 0;
   display: block;
@@ -181,7 +186,7 @@ body {
 .nav-link:focus::after,
 .nav-link.current::after {
   opacity: 1;
-}
+} */
 /*------------------------Адрес ------------------*/
 
 .address-list .address-item:hover,
