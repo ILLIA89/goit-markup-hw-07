@@ -52,7 +52,7 @@
 
   /*---------------------- Навігація------------------ */
 
-  .nav-menu {
+  /* .nav-menu {
     display: flex;
     gap: 40px;
   }
@@ -110,10 +110,10 @@
   .nav-link:focus::after,
   .nav-link.current::after {
     opacity: 1;
-  }
+  } */
   /*------------------------Адрес ------------------*/
 
-  .address-list .address-item:hover,
+  /* .address-list .address-item:hover,
   .address-list .address-item:focus {
     color: var(--button-hover-background);
   }
@@ -129,7 +129,7 @@
   .address-list {
     display: flex;
     gap: 40px;
-  }
+  } */
 }
 
 @media (min-with: 1158px) {

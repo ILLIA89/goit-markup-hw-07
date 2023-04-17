@@ -26,7 +26,7 @@
       <div class="container header-container">
         <nav class="nav">
           <a class="logo link">Web<span class="studio">Studio</span></a>
-          <button type="button" class="nav-menu-button">
+          <button type="button" class="nav-menu-button js-open-menu">
             <svg width="32" height="22" class="menu-icon">
               <use
                 href="./images/icons2.svg#icon-hamburger"
@@ -436,21 +436,77 @@
     </footer>
 
     <!-------------------------------- Мобільне вікно------------------------------>
-    <div class="mobile-menu">
-      <div class="container menu-mobil-container">
+    <div class="mobile-menu js-menu-container is-hidden">
+      <div class="menu-mobile-container">
         <div>
-          <button></button>
+          <button class="close-menu-mobile js-close-menu">
+            <svg class="mobile-icon-close" width="8" height="8">
+              <use href="./images/icons2.svg#icon-close"></use>
+            </svg>
+          </button>
           <nav>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="mobile-list">
+              <li class="list mobile-list-item">
+                <a class="nav-link link" href="./index.html">Studio</a>
+              </li>
+              <li class="list mobile-list-item">
+                <a class="nav-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="list mobile-list-item">
+                <a class="nav-link link" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div>
-          <address></address>
-          <ul class="team----переробити"></ul>
+          <address class="address mobile-address">
+            <ul class="mobile-address-list list">
+              <li class="mobile-address-items">
+                <a
+                  class="mobile-address-item link tel-styles"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-address-items">
+                <a
+                  class="mobile-address-item link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-soc-list">
+            <li class="mobile-soc-item list">
+              <a class="mobile-soc-link" href="">
+                <svg width="24" height="24" class="mobile-soc-icon">
+                  <use href="./images/icons2.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item list">
+              <a class="team-soc-link" href="">
+                <svg width="24" height="24" class="team-soc-icon">
+                  <use href="./images/icons2.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item list">
+              <a class="team-soc-link" href="">
+                <svg width="24" height="24" class="team-soc-icon">
+                  <use href="./images/icons2.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item list">
+              <a class="team-soc-link" href="">
+                <svg width="24" height="24" class="team-soc-icon">
+                  <use href="./images/icons2.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -538,5 +594,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src=".js/mobile-menu.js"></script>
   </body>
 </html>
