@@ -67,6 +67,12 @@ img {
   overflow: hidden;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* --------------Тіло сторінки ------------------*/
 
 body {
@@ -125,9 +131,11 @@ body {
 .nav-menu {
   display: flex;
   gap: 40px;
+  display: none;
 }
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -158,6 +166,10 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list {
+  display: none;
 }
 
 /* .nav-link::after {
@@ -211,6 +223,9 @@ body {
   left: 0;
   background-color: #fff;
   overflow-y: scroll;
+
+  /* transform: translateX(100%);
+  transition: transform 250ms ease-in-out; */
 }
 
 .menu-mobile-container {
@@ -236,7 +251,8 @@ body {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--background-body-color);
+  background-color: transparent;
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--titel-text-color);
   transition-property: background, color;
@@ -338,11 +354,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  max-width: 428px;
   /* outline: 2px solid tomato; */
   /* background-color: aqua; */
 }
 /* -----------------------Герой --------------------------*/
 .hero {
+  max-width: 428px;
   padding: 112px 0;
   margin: 0 auto;
   text-align: center;
@@ -459,6 +477,10 @@ body {
 }
 
 /* ----------------Приклади робіт ----------------------*/
+.example {
+  display: none;
+}
+
 .section.example {
   padding-top: 0;
 }
@@ -908,8 +930,8 @@ body {
 
 .modal {
   position: absolute;
-  min-width: 392px;
-  min-height: 576px;
+  width: 100%;
+  max-width: 392px;
   padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
@@ -952,12 +974,6 @@ body {
 .modal-close:focus {
   background: var(--button-hover-background);
   color: var(--background-body-color);
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .no-scroll {
@@ -1154,18 +1170,3 @@ body {
   letter-spacing: 0.04em;
   background: var(--button-hover-background);
 }
-
-/* @media screen and (min-width: 768px) {
-  .container {
-    width: 766px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-} */
