@@ -626,20 +626,21 @@ body {
 }
 .samples-bar {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 72px;
-  justify-content: center;
+  align-items: left;
   gap: 24px;
 }
 
-.samples-pic {
+/* .samples-pic {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .samples-list {
-  width: calc((100% - 48px) / 3);
-  margin-right: 24px;
-  margin-bottom: 48px;
+  /* width: calc((100% - 48px) / 3); */
+  /* margin-right: 24px;
+  margin-bottom: 48px; */
 }
 
 .samples-lists {

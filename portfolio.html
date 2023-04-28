@@ -16,6 +16,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediatablet.css" />
+    <link rel="stylesheet" href="./css/mediadesktop.css" />
   </head>
   <body>
     <!------------------------------ Шапка ------------------------------->
@@ -24,13 +26,27 @@
         <nav class="nav">
           <a class="logo link">Web<span class="studio">Studio</span></a>
 
+          <button
+            type="button"
+            class="nav-menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32" height="22" class="menu-icon">
+              <use
+                href="./images/icons2.svg#icon-hamburger"
+                class="burger-btn"
+              ></use>
+            </svg>
+          </button>
+
           <ul class="nav-menu list">
             <li class="nav-item">
               <a class="nav-link link" href="./index.html">Studio</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link current link" href="./portfolio.html"
+              <a class="nav-link link current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -54,6 +70,83 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-------------------------------- Мобільне вікно------------------------------>
+      <div class="mobile-menu js-menu-container">
+        <div class="menu-mobile-container">
+          <div>
+            <button class="close-menu-mobile js-close-menu">
+              <svg class="mobile-icon-close" width="8" height="8">
+                <use href="./images/icons2.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mobile-list">
+                <li class="list mobile-list-item">
+                  <a class="nav-link link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="list mobile-list-item">
+                  <a class="nav-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="list mobile-list-item">
+                  <a class="nav-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="address mobile-address">
+              <ul class="mobile-address-list list">
+                <li class="mobile-address-items">
+                  <a
+                    class="mobile-address-item link tel-styles"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-address-items">
+                  <a
+                    class="mobile-address-item link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-soc-list">
+              <li class="mobile-soc-item list">
+                <a class="mobile-soc-link" href="">
+                  <svg width="24" height="24" class="mobile-soc-icon">
+                    <use href="./images/icons2.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item list">
+                <a class="team-soc-link" href="">
+                  <svg width="24" height="24" class="team-soc-icon">
+                    <use href="./images/icons2.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item list">
+                <a class="team-soc-link" href="">
+                  <svg width="24" height="24" class="team-soc-icon">
+                    <use href="./images/icons2.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item list">
+                <a class="team-soc-link" href="">
+                  <svg width="24" height="24" class="team-soc-icon">
+                    <use href="./images/icons2.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!----------------------------------Головна частина---------------------------------->
@@ -325,5 +418,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

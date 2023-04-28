@@ -140,6 +140,11 @@
   .footer-form {
     display: flex;
   }
+
+  .samples-bar {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
