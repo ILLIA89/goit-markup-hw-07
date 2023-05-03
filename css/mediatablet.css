@@ -89,7 +89,10 @@
 
   .address-item {
     color: var(--primary-text-color);
-    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,7 +103,14 @@
     column-gap: 24px;
   }
   .solutions-text-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     text-align: left;
+  }
+
+  .solutions-text {
+    font-weight: 500;
   }
 
   .team .container {
