@@ -874,13 +874,13 @@ body {
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms linear;
 }
-/* @media screen and (max-width: 1157px) {
+@media screen and (max-width: 1157px) {
   .modal {
     overflow-y: auto;
-    max-height: 586px;
-    height: 90%;
+    max-height: 600px;
+    height: 100%;
   }
-} */
+}
 
 @media screen and (max-width: 427px) {
   .modal {
